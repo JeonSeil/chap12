@@ -26,9 +26,10 @@ public class ThreadEx2 {
 		 */
 		Thread t1 = new Thread(r,"First");
 		Thread t2 = new Thread(r,"Second");
-//		t1.start(); t2.start();
-		t1.run();
-		t2.run();
+		t1.start();
+		t2.start();
+//		t1.run(); //r 객체의 run 메서드 호출함
+//		t2.run();
 		System.out.println("main 스레드 종료");
 	}
 }
